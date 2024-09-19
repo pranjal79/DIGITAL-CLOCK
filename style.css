@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(image2.jpg);
+    margin: 0;
+    color: white;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clock-container {
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 40%;
+    width: 40%;
+    max-width: 500px;
+    max-height: 300px;
+    min-width: 250px;
+    min-height: 150px;
+}
+
+#time {
+    font-size: 4vw; /* Adjust font-size with viewport width */
+    margin-bottom: 10px;
+}
+
+#day {
+    font-size: 2vw; /* Responsive font-size for smaller screens */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #404c4f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5vw; /* Adjust button size for different screen sizes */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(74, 71, 71);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .clock-container {
+        width: 80%; /* Increase width on smaller screens */
+    }
+    #time {
+        font-size: 8vw; /* Make the time larger for smaller devices */
+    }
+    #day {
+        font-size: 4vw;
+    }
+    button {
+        font-size: 3vw; /* Adjust button size for mobile screens */
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clock-container {
+        width: 90%; /* Make clock-container almost full width on very small screens */
+    }
+    #time {
+        font-size: 10vw;
+    }
+    #day {
+        font-size: 5vw;
+    }
+    button {
+        font-size: 4vw;
+        padding: 5px 10px;
+    }
+}
